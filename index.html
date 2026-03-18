@@ -9,14 +9,19 @@
 </head>
 <body>
 	<header class="header">
-		<div class="logo"><a href="./index.html">Team Stardust</a></div>
+		<div class="logo"><a href="index.html">Team Stardust</a></div>
 		<nav>
-			<ul>
+			<div class="mobile-menu">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+			<ul class="nav-list">
 				<li><a href="#" class="active">Blog</a></li>
-				<li><a href="./pages/our-projects.html">Projects</a></li>
+				<li><a href="pages/our-projects.html">Projects</a></li>
 				<!-- <li><a href="./pages/about.html">About</a></li> -->
-				<li><a href="#"><img src="./img/discord-icon.svg" alt="Discord Icon"></a></li>
-				<li><a href="#"><img src="./img/youtube-icon.svg" alt="Youtube Icon"></a></li>
+				<li><a href="#"><img src="img/discord-icon.svg" alt="Discord Icon"></a></li>
+				<li><a href="#"><img src="img/youtube-icon.svg" alt="Youtube Icon"></a></li>
 			</ul>
 		</nav>
 	</header>
@@ -29,7 +34,7 @@
 
 		<main>
 			<section class="card">
-				<img src="" alt="lorem ipsum">
+				<img src="img/bg1.jpg" alt="lorem ipsum">
 				<div>
 					<h3>Lorem ipsum dolor sit amet.</h3>
 					<p class="publish-date">January 1, 2023</p>
@@ -39,7 +44,7 @@
 			</section>
 
 			<section class="card" data-aos="fade-left">
-				<img src="" alt="lorem ipsum">
+				<img src="img/bg0.jpg" alt="lorem ipsum">
 				<div>
 					<h3>Lorem ipsum dolor sit amet.</h3>
 					<p class="publish-date">January 1, 2023</p>
@@ -49,7 +54,7 @@
 			</section>
 
 			<section class="card" data-aos="fade-right">
-				<img src="" alt="lorem ipsum">
+				<img src="img/bg1.jpg" alt="lorem ipsum">
 				<div>
 					<h3>Lorem ipsum dolor sit amet.</h3>
 					<p class="publish-date">January 1, 2023</p>
@@ -59,7 +64,7 @@
 			</section>
 
 			<section class="card" data-aos="fade-left">
-				<img src="" alt="lorem ipsum">
+				<img src="img/bg0.jpg" alt="lorem ipsum">
 				<div>
 					<h3>Lorem ipsum dolor sit amet.</h3>
 					<p class="publish-date">January 1, 2023</p>
@@ -69,7 +74,7 @@
 			</section>
 
 			<section class="card" data-aos="fade-right">
-				<img src="" alt="lorem ipsum">
+				<img src="img/bg1.jpg" alt="lorem ipsum">
 				<div>
 					<h3>Lorem ipsum dolor sit amet.</h3>
 					<p class="publish-date">January 1, 2023</p>
@@ -94,5 +99,6 @@
 			duration: 1000
 		});
 	</script>
+	<script src="scripts/mobile-navbar.js"></script>
 </body>
 </html>
