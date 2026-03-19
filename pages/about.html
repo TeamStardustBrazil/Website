@@ -4,44 +4,48 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Team Stardust</title>
-	<link rel="stylesheet" href="../style/style.css">
+	<link rel="stylesheet" href="../style.css">
 </head>
 <body>
-	<header class="header">
-		<div class="logo">Team Stardust</div>
-
+	<header class="header liquid-glass">
+		<div class="logo"><a href="index.html">Team Stardust</a></div>
 		<nav>
-			<ul>
+			<div class="mobile-menu">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+			<ul class="nav-list">
 				<li><a href="../index.html">Blog</a></li>
-				<li><a href="../pages/our-projects.html">Our Projects</a></li>
-				<li><a href="#" class="active">About</a></li>
-				<li><a href="#"><img src="../img/discord-icon-black.svg" alt="Discord Icon" width="24px" height="32px"></a></li>
-				<li><a href="#"><img src="../img/youtube-icon-black.svg" alt="Youtube Icon" width="24px" height="32px"></a></li>
+				<li><a href="../pages/our-projects.html">Projects</a></li>
+				<li><a href="../pages/about.html" class="active">About</a></li>
 			</ul>
 		</nav>
 	</header>
 	
-	<div class="container">
+	<div class="container-person">
 		<section class="hero">
-			<img src="" alt="logo">
+			<!-- <img src="https://media.tenor.com/FYsjyvi3C7kAAAAi/rupert-cat.gif" alt="logo" height="64px" width="64px"> -->
 			<h1>Team Stardust</h1>
-			<h2>GAMES ARE <span>ART</span></h2>
-			<p>Team Stardust is an indie games developer in</p>
+			<h2>GAMES ARE <span>ART!</span></h2>
+			<p>Team Stardust is a Brazilian indie game developer.</p>
 		</section>
 	
 		<main>
-			<section class="person">
-				<img src="" alt="Placeholder">
+			<section class="person liquid-glass">
+				<img src="../img/photos/nyx-arashi.webp" alt="Placeholder">
 				<h3>Lorem ipsum</h3>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, cum rem laudantium inventore explicabo iure nam, eaque exercitationem dolorum reprehenderit laborum magnam ut pariatur reiciendis, aspernatur fugiat error magni consequuntur.</p>
 			</section>
 		</main>
 	</div>
 
-	<div class="footer">
-		<footer>
-			&copy; 2026 Team Stardust. All rights reserved.
-		</footer>
-	</div>
+	<footer class="footer liquid-glass">
+		&copy; <script>document.write(new Date().getFullYear())</script> Team Stardust. All rights reserved.
+		<ul class="social-network">
+			<li><a href="https://discord.gg/rfXrthUaT4"><img src="../img/icons/discord-icon.svg" alt="Discord Icon"></a></li>
+			<li><a href="#"><img src="../img/icons/youtube-icon.svg" alt="Youtube Icon"></a></li>
+		</ul>
+	</footer>
 </body>
 </html>
