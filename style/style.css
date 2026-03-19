@@ -36,28 +36,27 @@ h1, h3, p {
 	color: #fff;
 }
 
+.liquid-glass {
+	/* From https://css.glass */
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
 /* Header Styles */
 .header {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	
-	/* From https://css.glass */
-	background: rgba(0, 0, 0, 0.2);
+	/* Liquid glass border adjustment */
 	border-radius: 0 0 16px 16px;
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-	border: 1px solid rgba(0, 0, 0, 0.3);
 	
 	height: 8vh;
 	font-size: 1.2rem;
-}
-
-.header img {
-	height: 3.2vh;
-	width: 1.25vw;
-	filter: brightness(0) invert(1);
 }
 
 .logo {
@@ -70,7 +69,6 @@ h1, h3, p {
 	color: green;
 }
 
-
 .nav-list {
 	list-style: none;
 	display: flex;
@@ -80,11 +78,6 @@ h1, h3, p {
 	letter-spacing: 3px;
 	margin-left: 32px;
 }
-
-/* .nav-list li a {
-	font-weight: 700;
-	padding: 0 2.4vh;
-} */
 
 .mobile-menu {
 	display: none;
@@ -136,16 +129,9 @@ img {
 	grid-template-columns: repeat(2, 1fr);
 	gap: 2rem;
 	margin-bottom: 3.2vh;
-	/* background: rgba(232, 97, 0, 0.5);
-	border-radius: 32px; */
 
-	/* From https://css.glass */
+	/* Liquid glass background adjustment */
 	background: rgba(232, 97, 0, 0.2);
-	border-radius: 16px;
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-	border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .card > div {
@@ -191,18 +177,29 @@ img {
 	justify-content: space-around;
 	align-items: center;
 	
-	/* From https://css.glass */
-	background: rgba(0, 0, 0, 0.2);
+	/* Liquid glass border adjustment */
 	border-radius: 16px 16px 0 0;
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-	border: 1px solid rgba(0, 0, 0, 0.3);
 	
 	height: 8vh;
 	color: #fff;
 	text-transform: capitalize;
 	font-size: 1rem;
+}
+
+.social-network {
+	list-style: none;
+	display: flex;
+}
+
+.social-network li {
+	letter-spacing: 3px;
+	margin-left: 32px;
+}
+
+.footer img {
+	height: 3.2vh;
+	width: 1.25vw;
+	filter: brightness(0) invert(1);
 }
 
 /* Media Queries */
@@ -217,13 +214,27 @@ img {
 		overflow-x: hidden;
 	}
 
+	.container {
+		position: relative;
+		z-index: -1;
+	}
+
 	.nav-list {
 		position: absolute;
 		top: 8vh;
 		right: 0;
 		width: 50vw;
 		height: 92vh;
-		background: #23232e;
+		/* background: #23232e; */
+
+		/* From https://css.glass */
+		background: rgba(35, 35, 46, 0.8);
+		border-radius: 16px;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
+		border: 1px solid rgba(0, 0, 0, 0.3);
+
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-around;
@@ -238,6 +249,7 @@ img {
 
 	.mobile-menu {
 		display: block;
+		z-index: 10;
 	}
 }
 
@@ -262,6 +274,23 @@ img {
 
 @keyframes navLinkFade {
 	from {
-		
+		opacity: 0;
+		transform: translateX(50px);
 	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.mobile-menu.active .line1 {
+	transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+	opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+	transform: rotate(45deg) translate(-5px, -7px);
 }

@@ -5,65 +5,75 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Team Stardust</title>
 	<link rel="stylesheet" href="../style/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-	<header class="header">
-		<div class="logo"><a href="../index.html">Team Stardust</a></div>
-
+	<header class="header liquid-glass">
+		<div class="logo"><a href="index.html">Team Stardust</a></div>
 		<nav>
-			<ul>
+			<div class="mobile-menu">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+			<ul class="nav-list">
 				<li><a href="../index.html">Blog</a></li>
-				<li><a href="#" class="active">Projects</a></li>
-				<!-- <li><a href="../pages/about.html">About</a></li> -->
-				<li><a href="#"><img src="../img/discord-icon.svg" alt="Discord Icon" width="24px" height="32px"></a></li>
-				<li><a href="#"><img src="../img/youtube-icon.svg" alt="Youtube Icon" width="24px" height="32px"></a></li>
+				<li><a href="../pages/our-projects.html" class="active">Projects</a></li>
+				<li><a href="../pages/about.html">About</a></li>
 			</ul>
 		</nav>
 	</header>
 
 	<div class="container">
 		<section class="hero">
-			<h1>Last <span>Updates</span> on our Project!</h1>
-			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil repellat molestias rerum? Quaerat asperiores voluptatum incidunt repellendus, nemo, optio quam excepturi repellat magnam, doloremque natus omnis voluptate autem! Maxime, quae!</p>
+			<h1><span>Check out</span> our Projects</h1>
+			<p>This page is dedicated to showcasing our projects and dedicated Discord servers!</p>
 		</section>
 
 		<main>
-			<section class="card">
-				<img src="../img/bg.jpg" alt="lorem ipsum">
+			<section class="card liquid-glass">
+				<img src="../img/nyx-arashi.webp" alt="Ilustracion of Nyx Arashi, a character from the game Imperial Prince. Made by @candy_the_doggys2 on Instagram.">
 				<div>
-					<h3>Lorem ipsum dolor sit amet.</h3>
-					<p class="publish-date">January 1, 2023</p>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias unde voluptates inventore delectus officiis perferendis autem excepturi quidem magni voluptatum beatae, pariatur aspernatur corrupti nesciunt culpa. Dolorem modi quam rerum!</p>
-					<a href="#" class="btn">Read more</a>
+					<h3>Imperial Prince</h3>
+					<!-- <p class="publish-date">January 1, 2023</p> -->
+					<p><b style="font-weight: bold !important;">Imperial Prince</b> is a game project currently in pre-production, promising to bring an original approach to the metroidvania genre. The story follows a young prince and his sister, whose mother—the empress and sovereign monarch—keeps them confined within the palace walls for fear that the outside world might cause them harm. Faced with this overprotection, it is up to the player to take on the role of the imperial prince and prove, through their actions, that he is strong enough to face any threat that exists beyond the royal walls.</p>
+					<br>
+					<p>The gameplay will combine non-linear exploration, inspired by titles such as <b>Hollow Knight</b> and <b>Hollow Knight: Silksong</b>, with progression based on the protagonist's maturation. As the prince ventures through the regions of the palace and its surroundings, he unlocks new abilities that allow him to access previously unreachable areas and uncover the secrets of the empire and his family.</p>
+					<br>
+					<p>Each of the prince's achievements not only expands the playable world but also reflects his personal growth—until the point where the conflict with the empress becomes inevitable, and the player will need to confront her to win their freedom. <b>Imperial Prince</b> aims to offer an immersive, exciting, and challenging experience for both genre fans and new players alike.</p>
+					<a href="#" class="btn liquid-glass">Join discord</a>
 				</div>
 			</section>
 
-			<section class="card">
-				<img src="../img/bg.jpg" alt="lorem ipsum">
+			<section class="card liquid-glass" data-aos="fade-left">
+				<img src="../img/bg0.jpg" alt="lorem ipsum">
 				<div>
 					<h3>Lorem ipsum dolor sit amet.</h3>
-					<p class="publish-date">January 1, 2023</p>
+					<!-- <p class="publish-date">January 1, 2023</p> -->
 					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias unde voluptates inventore delectus officiis perferendis autem excepturi quidem magni voluptatum beatae, pariatur aspernatur corrupti nesciunt culpa. Dolorem modi quam rerum!</p>
-					<a href="#" class="btn">Read more</a>
-				</div>
-			</section>
-
-			<section class="card">
-				<img src="../img/bg.jpg" alt="lorem ipsum">
-				<div>
-					<h3>Lorem ipsum dolor sit amet.</h3>
-					<p class="publish-date">January 1, 2023</p>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias unde voluptates inventore delectus officiis perferendis autem excepturi quidem magni voluptatum beatae, pariatur aspernatur corrupti nesciunt culpa. Dolorem modi quam rerum!</p>
-					<a href="#" class="btn">Read more</a>
+					<a href="#" class="btn liquid-glass">Read more</a>
 				</div>
 			</section>
 		</main>
 	</div>
 
-	<div class="footer">
-		<footer>
-			&copy; 2026 Team Stardust. All rights reserved.
-		</footer>
-	</div>
+	<footer class="footer liquid-glass">
+		&copy; <script>document.write(new Date().getFullYear())</script> Team Stardust. All rights reserved.
+		<ul class="social-network">
+			<li><a href="#"><img src="../img/discord-icon.svg" alt="Discord Icon"></a></li>
+			<li><a href="#"><img src="../img/youtube-icon.svg" alt="Youtube Icon"></a></li>
+		</ul>
+	</footer>
+
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			offset: 400,
+			dely: 0,
+			duration: 1000
+		});
+	</script>
+	<script src="scripts/mobile-navbar.js"></script>
 </body>
 </html>
