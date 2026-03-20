@@ -1,3 +1,8 @@
+.hero {
+	text-align: center;
+	margin: 60px;
+}
+
 /* Card Styles */
 .card {
 	display: grid;
@@ -32,20 +37,9 @@
 	margin-bottom: 1rem;
 }
 
-.btn {
-	display: inline-block;
-	background: green;
-	margin-top: 2rem;
-	padding: .8rem 1.5rem;
-	text-transform: capitalize;
-}
-
-.btn:hover {
-	opacity: .8;
-}
-
 img {
 	width: 100%;
 	height: auto;
+	margin: 5px;
 	border-radius: 16px;
 }

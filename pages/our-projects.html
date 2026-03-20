@@ -3,26 +3,39 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Team Stardust</title>
 	<link rel="stylesheet" href="../styles/style.css">
 	<link rel="stylesheet" href="../styles/card.css">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<title>Team Stardust</title>
 </head>
 <body>
-	<header class="header liquid-glass">
-		<div class="logo"><a href="https://teamstardust.com.br">Team Stardust</a></div>
-		<nav>
-			<div class="mobile-menu">
-				<div class="line1"></div>
-				<div class="line2"></div>
-				<div class="line3"></div>
+	<header class="liquid-glass">
+		<nav class="nav-bar">
+			<div class="logo">
+				<a href="https://teamstardust.com.br">Team Stardust</a>
 			</div>
-			<ul class="nav-list">
-				<li><a href="../">Home</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="our-projects.html" class="active">Projects</a></li>
-				<li><a href="about.html">About</a></li>
-			</ul>
+
+			<div class="nav-list">
+				<ul>
+					<li class="nav-item"><a href="../" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+					<li class="nav-item"><a href="our-projects.html" class="nav-link active">Projects</a></li>
+					<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+				</ul>
+			</div>
+
+			<div class="mobile-menu-icon">
+				<button onclick="menuShow()"><img src="../img/icons/menu.svg" alt="Menu" class="icon"></button>
+			</div>
+			
+			<div class="mobile-menu">
+				<ul>
+					<li class="nav-item"><a href="../" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+					<li class="nav-item"><a href="our-projects.html" class="nav-link active">Projects</a></li>
+					<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+				</ul>
+			</div>
 		</nav>
 	</header>
 

@@ -9,36 +9,52 @@
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-	<header class="header liquid-glass">
-		<div class="logo"><a href="https://teamstardust.com.br">Team Stardust</a></div>
-		<nav>
-			<div class="mobile-menu">
-				<div class="line1"></div>
-				<div class="line2"></div>
-				<div class="line3"></div>
+	<header class="liquid-glass">
+		<nav class="nav-bar">
+			<div class="logo">
+				<a href="https://teamstardust.com.br">Team Stardust</a>
 			</div>
-			<ul class="nav-list">
-				<li><a href="../">Home</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="our-projects.html">Projects</a></li>
-				<li><a href="about.html" class="active">About</a></li>
-			</ul>
+
+			<div class="nav-list">
+				<ul>
+					<li class="nav-item"><a href="../" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+					<li class="nav-item"><a href="our-projects.html" class="nav-link">Projects</a></li>
+					<li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
+				</ul>
+			</div>
+
+			<div class="mobile-menu-icon">
+				<button onclick="menuShow()"><img src="../img/icons/menu.svg" alt="Menu" class="icon"></button>
+			</div>
+			
+			<div class="mobile-menu">
+				<ul>
+					<li class="nav-item"><a href="../" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+					<li class="nav-item"><a href="our-projects.html" class="nav-link">Projects</a></li>
+					<li class="nav-item"><a href=about.html" class="nav-link active">About</a></li>
+				</ul>
+			</div>
 		</nav>
 	</header>
 	
-	<div class="container">
-		<main class="hero">
+	<main>
+		<div class="hero">
 			<!-- <img src="https://media.tenor.com/FYsjyvi3C7kAAAAi/rupert-cat.gif" alt="logo" height="64px" width="64px"> -->
 			<h1>Team Stardust</h1>
 			<h2>GAMES ARE <span>ART!</span></h2>
 			<p>Team Stardust is a Brazilian indie game developer.</p>
+		</div>
+		
+		<div class="container">
 			<section class="person liquid-glass">
 				<img src="../img/photos/lucas-ramos.webp" alt="Placeholder">
 				<h3>Lucas Ramos</h3>
 				<p>Lucas Gabriel Ramos da Silva is currently a student of Systems Analysis and Development who dreams of creating games. He also streams on <span>Twitch</span> under the pseudonym <span>Sirius Stardust</span>.</p>
 			</section>
-		</main>
-	</div>
+		</div>
+	</main>
 
 	<footer class="footer liquid-glass">
 		&copy; <script>document.write(new Date().getFullYear())</script> Team Stardust. All rights reserved.

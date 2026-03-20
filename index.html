@@ -2,47 +2,68 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Team Stardust</title>
 	<link rel="stylesheet" href="styles/style.css">
 	<link rel="stylesheet" href="styles/home.css">
+	<title>Team Stardust</title>
 </head>
 <body>
-	<header class="header liquid-glass">
-		<div class="logo"><a href="https://teamstardust.com.br">Team Stardust</a></div>
-		<nav>
-			<div class="mobile-menu">
-				<div class="line1"></div>
-				<div class="line2"></div>
-				<div class="line3"></div>
+	<header class="liquid-glass">
+		<nav class="nav-bar">
+			<div class="logo">
+				<a href="https://teamstardust.com.br">Team Stardust</a>
 			</div>
-			<ul class="nav-list">
-				<li><a href="/" class="active">Home</a></li>
-				<li><a href="pages/blog.html">Blog</a></li>
-				<li><a href="pages/our-projects.html">Projects</a></li>
-				<li><a href="pages/about.html">About</a></li>
-			</ul>
+
+			<div class="nav-list">
+				<ul>
+					<li class="nav-item"><a href="/" class="nav-link active">Home</a></li>
+					<li class="nav-item"><a href="pages/blog.html" class="nav-link">Blog</a></li>
+					<li class="nav-item"><a href="pages/our-projects.html" class="nav-link">Projects</a></li>
+					<li class="nav-item"><a href="pages/about.html" class="nav-link">About</a></li>
+				</ul>
+			</div>
+
+			<div class="mobile-menu-icon">
+				<button onclick="menuShow()"><img src="img/icons/menu.svg" alt="Menu" class="icon"></button>
+			</div>
+			
+			<div class="mobile-menu">
+				<ul>
+					<li class="nav-item"><a href="/" class="nav-link active">Home</a></li>
+					<li class="nav-item"><a href="pages/blog.html" class="nav-link">Blog</a></li>
+					<li class="nav-item"><a href="pages/our-projects.html" class="nav-link">Projects</a></li>
+					<li class="nav-item"><a href="pages/about.html" class="nav-link">About</a></li>
+				</ul>
+			</div>
 		</nav>
 	</header>
 
-	<div class="container">
-		<main class="hero">
-			<h1><span>Welcome</span>!</h1>
-			<p>Here you can find all our projects, news and more! Follow us on our social media to stay updated with the latest news and projects from Team Stardust.</p>
-			<ul>
-				<li><a href="https://discord.gg/rfXrthUaT4" class="liquid-glass">Join Discord</a></li>
-				<li><a href="/" class="liquid-glass">Patreon</a></li>
-			</ul>
-		</main>
-	</div>
+	<main>
+		<div class="container">
+			<div class="hero">
+				<h1><span>Welcome</span>!</h1>
+				<p>Here you can find all our projects, news and more! Follow us on our social media to stay updated with the latest news and projects from Team Stardust.</p>
+				<ul>
+					<li>
+						<button class="btn liquid-glass"><a href="https://discord.gg/rfXrthUaT4">Join Discord</a></button>
+					</li>
+					<li>
+						<button class="btn liquid-glass"><a href="/">Patreon</a></button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</main>
 
-	<footer class="footer liquid-glass">
+	<footer class="liquid-glass">
 		&copy; <script>document.write(new Date().getFullYear())</script> Team Stardust. All rights reserved.
 		<ul class="social-network">
 			<li><a href="https://discord.gg/rfXrthUaT4"><img src="img/icons/discord-icon.svg" alt="Discord Icon"></a></li>
 			<li><a href="#"><img src="img/icons/youtube-icon.svg" alt="Youtube Icon"></a></li>
 		</ul>
 	</footer>
+
 	<script src="scripts/mobile-navbar.js"></script>
 </body>
 </html>
