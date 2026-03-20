@@ -43,3 +43,19 @@ img {
 	margin: 5px;
 	border-radius: 16px;
 }
+
+@media screen and (max-width: 1000px) {
+	.hero {
+		margin: 30px;
+	}
+
+	.card {
+		display: flex;
+		flex-direction: column;
+	}
+
+	img {
+		width: 30%;
+		align-self: center;
+	}
+}
