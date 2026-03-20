@@ -53,6 +53,10 @@ img {
 		display: flex;
 		flex-direction: column;
 	}
+	
+	.card:nth-child(even) img {
+		order: 0;
+	}
 
 	img {
 		width: 30%;
