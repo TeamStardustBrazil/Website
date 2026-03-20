@@ -1,0 +1,51 @@
+/* Card Styles */
+.card {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+	margin-bottom: 3.2vh;
+
+	/* Liquid glass background adjustment */
+	background: rgba(232, 97, 0, 0.2);
+}
+
+.card > div {
+	padding: 2rem;
+}
+
+.card:nth-child(even) img {
+	order: 2;
+}
+
+.card h3 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.card div span {
+	color: #0cdffa;
+}
+
+.publish-date {
+	font-size: 1.2rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+.btn {
+	display: inline-block;
+	background: green;
+	margin-top: 2rem;
+	padding: .8rem 1.5rem;
+	text-transform: capitalize;
+}
+
+.btn:hover {
+	opacity: .8;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	border-radius: 16px;
+}

@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Datatype:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ultra&display=swap');
 
 *,
 *::before,
@@ -10,12 +9,12 @@
 }
 
 body {
-	font-family: 'Datatype', monospace;
-	font-size: 1.3rem;
-	font-weight: 400;
+	font-family: "IBM Plex Serif", serif;
+  	font-weight: 400;
+  	font-style: normal;
 
 	/* Foto de background de Ivana Cajina na Unsplash */
-	background: url("img/bg.webp") no-repeat center center;
+	background: url("../img/bg.webp") no-repeat center center;
 	background-size: cover;
 	backdrop-filter: blur(5px);
 }
@@ -34,12 +33,6 @@ a:hover {
 
 h1, h3, p {
 	color: #fff;
-}
-
-img {
-	height: 100%;
-	width: 100%;
-	border-radius: 16px;
 }
 
 span {
@@ -73,6 +66,10 @@ span {
 }
 
 .logo {
+	font-family: "Ultra", serif;
+	font-weight: 400;
+	font-style: normal;
+
 	font-size: 2.5rem;
 	text-transform: uppercase;
 	letter-spacing: .25rem;
@@ -125,80 +122,6 @@ span {
 
 .hero h1 {
 	font-size: 3rem;
-	margin-bottom: 2rem;
-}
-
-/* Card Styles */
-.card {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 2rem;
-	margin-bottom: 3.2vh;
-
-	/* Liquid glass background adjustment */
-	background: rgba(232, 97, 0, 0.2);
-}
-
-.card > div {
-	padding: 2rem;
-}
-
-.card:nth-child(even) img {
-	order: 2;
-}
-
-.card h3 {
-	font-size: 2rem;
-	margin-bottom: 1rem;
-}
-
-.card div span {
-	color: #0cdffa;
-}
-
-.publish-date {
-	font-size: 1.2rem;
-	font-weight: 700;
-	margin-bottom: 1rem;
-}
-
-.btn {
-	display: inline-block;
-	background: green;
-	margin-top: 2rem;
-	padding: .8rem 1.5rem;
-	text-transform: capitalize;
-}
-
-.btn:hover {
-	opacity: .8;
-}
-
-/* Person Styles */
-.container-person {
-	max-width: 50%;
-	margin: 0 auto;
-}
-
-.person {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	gap: 2rem;
-	margin-bottom: 3.2vh;
-}
-
-.person > div {
-	padding: 2rem;
-}
-
-.person h3 {
-	font-size: 2rem;
-	margin-bottom: 1rem;
-}
-
-.person p {
 	margin-bottom: 2rem;
 }
 
