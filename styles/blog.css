@@ -1,0 +1,68 @@
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 60px;
+
+	/* Liquid glass background adjustment */
+	background: rgba(232, 97, 0, 0.2);
+}
+
+.content img {
+	width: 30%;
+	height: auto;
+	margin-top: 10px;
+	border-radius: 16px;
+}
+
+.content div {
+	text-align: center;
+	margin: 60px;
+}
+
+.content h3 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.publish-date {
+	text-align: center;
+	font-size: 1.2rem;
+	margin-bottom: .5rem;
+}
+
+.txt {
+	text-align: justify;
+	margin-bottom: 1rem;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+	.content {
+		margin: 30px;
+	}
+
+	.content img {
+		width: 20%;
+	}
+
+	.content div {
+		text-align: center;
+		margin: 30px;
+	}
+
+	.content h3 {
+		font-size: 1rem;
+		margin-bottom: .5rem;
+	}
+
+	.publish-date {
+		font-size: .9rem;
+	}
+
+	.txt {
+		font-size: .8rem;
+		margin-bottom: .5rem;
+	}
+}

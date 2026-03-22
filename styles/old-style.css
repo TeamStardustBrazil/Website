@@ -14,7 +14,7 @@ body {
   	font-style: normal;
 
 	/* Foto de background de Ivana Cajina na Unsplash */
-	background: url("../img/bg.webp") no-repeat center center;
+	background: url("/img/bg.webp") no-repeat center center;
 	background-size: cover;
 	backdrop-filter: blur(5px);
 }

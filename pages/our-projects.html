@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../styles/style.css">
-	<link rel="stylesheet" href="../styles/card.css">
+	<link rel="stylesheet" href="/styles/style.css">
+	<link rel="stylesheet" href="/styles/card.css">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<title>Team Stardust</title>
 </head>
@@ -17,37 +17,37 @@
 
 			<div class="nav-list">
 				<ul>
-					<li class="nav-item"><a href="../" class="nav-link">Home</a></li>
-					<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-					<li class="nav-item"><a href="our-projects.html" class="nav-link active">Projects</a></li>
-					<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+					<li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="/pages/blog.html" class="nav-link">Blog</a></li>
+					<li class="nav-item"><a href="/pages/our-projects.html" class="nav-link active">Projects</a></li>
+					<li class="nav-item"><a href="/pages/about.html" class="nav-link">About</a></li>
 				</ul>
 			</div>
 
 			<div class="mobile-menu-icon">
-				<button onclick="menuShow()"><img src="../img/icons/menu.svg" alt="Menu" class="icon"></button>
+				<button onclick="menuShow()"><img src="/img/icons/menu.svg" alt="Menu" class="icon"></button>
 			</div>
 			
 			<div class="mobile-menu">
 				<ul>
-					<li class="nav-item"><a href="../" class="nav-link">Home</a></li>
-					<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-					<li class="nav-item"><a href="our-projects.html" class="nav-link active">Projects</a></li>
-					<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+					<li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="/pages/blog.html" class="nav-link">Blog</a></li>
+					<li class="nav-item"><a href="/pages/our-projects.html" class="nav-link active">Projects</a></li>
+					<li class="nav-item"><a href="/pages/about.html" class="nav-link">About</a></li>
 				</ul>
 			</div>
 		</nav>
 	</header>
 
-	<div class="container">
+	<main>
 		<section class="hero">
 			<h1><span>Check out</span> our Projects</h1>
 			<p>This page is dedicated to showcasing our projects and dedicated Discord servers!</p>
 		</section>
-
-		<main>
+	
+		<div class="container">
 			<section class="card liquid-glass">
-				<img src="../img/photos/nyx-arashi.webp" alt="Ilustracion of Nyx Arashi, a character from the game Imperial Prince. Made by @candy_the_doggys2 on Instagram.">
+				<img src="/img/photos/nyx-arashi.webp" alt="Ilustracion of Nyx Arashi, a character from the game Imperial Prince. Made by @candy_the_doggys2 on Instagram.">
 				<div>
 					<h3>Imperial Prince</h3>
 					<p><span>Imperial Prince</span> is a game project currently in pre-production, promising to bring an original approach to the metroidvania genre. The story follows a young prince and his sister, whose mother—the empress and sovereign monarch—keeps them confined within the palace walls for fear that the outside world might cause them harm. Faced with this overprotection, it is up to the player to take on the role of the imperial prince and prove, through their actions, that he is strong enough to face any threat that exists beyond the royal walls.</p>
@@ -60,7 +60,7 @@
 			</section>
 
 			<section class="card liquid-glass" data-aos="fade-left">
-				<img src="../img/photos/echoes-smp-icon.webp" alt="Echoes SMP Icon">
+				<img src="/img/photos/echoes-smp-icon.webp" alt="Echoes SMP Icon">
 				<div>
 					<h3>Echoes SMP: Sounds Of Hollow</h3>
 					<p><span>Echoes SMP</span> is a Minecraft server with a strong focus on roleplay (RP), set in a space-themed environment and enriched by a selection of mods that enhance immersion and gameplay.</p>
@@ -73,14 +73,14 @@
 					<button class="btn liquid-glass"><a href="https://discord.gg/TVXYM4DvGN">Join discord</a></button>
 				</div>
 			</section>
-		</main>
-	</div>
+		</div>
+	</main>
 
 	<footer class="footer liquid-glass">
-		&copy; <script>document.write(new Date().getFullYear())</script> Team Stardust. All rights reserved.
+		<p>&copy; <script>document.write(new Date().getFullYear())</script> Team Stardust. All rights reserved.</p>
 		<ul class="social-network">
-			<li><a href="https://discord.gg/rfXrthUaT4"><img src="../img/icons/discord-icon.svg" alt="Discord Icon"></a></li>
-			<li><a href="#"><img src="../img/icons/youtube-icon.svg" alt="Youtube Icon"></a></li>
+			<li><a href="https://discord.gg/rfXrthUaT4"><img src="/img/icons/discord-icon.svg" alt="Discord Icon"></a></li>
+			<li><a href="#"><img src="/img/icons/youtube-icon.svg" alt="Youtube Icon"></a></li>
 		</ul>
 	</footer>
 
@@ -93,6 +93,6 @@
 			duration: 1000
 		});
 	</script>
-	<script src="../scripts/mobile-navbar.js"></script>
+	<script src="/scripts/mobile-navbar.js"></script>
 </body>
 </html>
