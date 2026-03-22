@@ -20,3 +20,10 @@
 	display: inline-block;
 	letter-spacing: 3px;
 }
+
+@media screen and (max-width: 1000px) {
+	.container ul {
+		display: flex;
+		flex-direction: column;
+	}
+}
