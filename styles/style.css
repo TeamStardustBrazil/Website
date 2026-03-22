@@ -117,12 +117,11 @@ header {
 }
 
 .hero {
+	height: 30dvh;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: center;
 	text-align: center;
-	margin-top: 60px;
 }
 
 .hero h1 {
