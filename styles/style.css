@@ -62,15 +62,22 @@ header {
 .logo {
 	display: flex;
 	align-items: center;
-
-	font-family: "Ultra", serif;
-	font-size: 1.2rem;
-	text-transform: uppercase;
 }
 
 .logo a {
 	text-decoration: none;
-	color: green;
+}
+
+.logo img {
+	width: 64px;
+	height: 64px;
+	filter: brightness(0) invert(1);
+	transition: opacity .3s ease-out;
+}
+
+.logo img:hover {
+	opacity: .7;
+	transition: opacity .3s ease-in;
 }
 
 .nav-list {
