@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/img/favicon.webp" type="image/x-icon">
+	<link rel="stylesheet" href="/styles/style.css">
+	<link rel="stylesheet" href="/styles/card.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<title>Team Stardust</title>
+</head>
+<body>
+	<header class="liquid-glass">
+		<nav class="nav-bar">
+			<div class="logo">
+				<a href="https://teamstardust.com.br"><img src="/img/logo.webp" alt="Team Stardust's logo" width="64" height="64"></a>
+			</div>
+
+			<div class="nav-list">
+				<ul>
+					<li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="/blog" class="nav-link">Blog</a></li>
+					<li class="nav-item"><a href="/projects" class="nav-link active">Projects</a></li>
+					<li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+				</ul>
+			</div>
+
+			<div class="mobile-menu-icon">
+				<button onclick="menuShow()"><img src="/img/icons/menu.svg" alt="Menu" class="icon"></button>
+			</div>
+			
+			<div class="mobile-menu">
+				<ul>
+					<li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="/blog" class="nav-link">Blog</a></li>
+					<li class="nav-item"><a href="/projects" class="nav-link active">Projects</a></li>
+					<li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="hero">
+			<h1><span>Check out</span> our Projects</h1>
+			<p>This page is dedicated to showcasing our projects and dedicated Discord servers!</p>
+		</section>
+	
+		<div class="container">
+			<section class="card liquid-glass">
+				<img src="/img/photos/nyx-arashi.webp" alt="Ilustracion of Nyx Arashi, a character from the game Imperial Prince. Made by @candy_the_doggys2 on Instagram.">
+				<div>
+					<h3>Imperial Prince</h3>
+					<p><span>Imperial Prince</span> is a game project currently in pre-production, promising to bring an original approach to the metroidvania genre. The story follows a young prince and his sister, whose mother—the empress and sovereign monarch—keeps them confined within the palace walls for fear that the outside world might cause them harm. Faced with this overprotection, it is up to the player to take on the role of the imperial prince and prove, through their actions, that he is strong enough to face any threat that exists beyond the royal walls.</p>
+					<br>
+					<p>The gameplay will combine non-linear exploration, inspired by titles such as <span>Hollow Knight</span> and <span>Hollow Knight: Silksong</span>, with progression based on the protagonist's maturation. As the prince ventures through the regions of the palace and its surroundings, he unlocks new abilities that allow him to access previously unreachable areas and uncover the secrets of the empire and his family.</p>
+					<br>
+					<p>Each of the prince's achievements not only expands the playable world but also reflects his personal growth—until the point where the conflict with the empress becomes inevitable, and the player will need to confront her to win their freedom. <span>Imperial Prince</span> aims to offer an immersive, exciting, and challenging experience for both genre fans and new players alike.</p>
+					<button class="btn liquid-glass"><a href="https://discord.gg/BGkP7eyp7s">Join discord</a></button>
+				</div>
+			</section>
+
+			<section class="card liquid-glass" data-aos="fade-left">
+				<img src="/img/photos/echoes-smp-icon.webp" alt="Echoes SMP Icon">
+				<div>
+					<h3>Echoes SMP: Sounds Of Hollow</h3>
+					<p><span>Echoes SMP</span> is a Minecraft server with a strong focus on roleplay (RP), set in a space-themed environment and enriched by a selection of mods that enhance immersion and gameplay.</p>
+					<br>
+					<p>In the story, players are stranded on the Moon, isolated from Earth with no possibility of return. Communication with their home planet has been lost, and resources are scarce—making survival a constant challenge. Every decision can mean the difference between life and death in this hostile and mysterious environment.</p>
+					<br>
+					<p>The server has not yet been launched and, for now, will be available exclusively to <span>streamers</span> and content creators, <strong>restricted to Portuguese speakers—there are currently no plans to offer support for other languages.</strong> The focus is on building an engaged, entirely Portuguese-speaking community, where roleplay and collaboration among participants are essential to uncovering the secrets of this lunar setting.</p>
+					<br>
+					<p>If you're a streamer looking for a unique survival experience with narrative and mods, keep an eye on <span>Echoes SMP</span> — more information will be released soon!</p>
+					<button class="btn liquid-glass"><a href="https://discord.gg/TVXYM4DvGN">Join discord</a></button>
+				</div>
+			</section>
+		</div>
+	</main>
+
+	<footer class="footer liquid-glass">
+		<p>&copy; <script>document.write(new Date().getFullYear())</script> Team Stardust. All rights reserved.</p>
+		<ul class="social-network">
+			<li><a href="https://discord.gg/BGkP7eyp7s"><img src="/img/icons/discord-icon.svg" alt="Discord Icon" width="24" height="24"></a></li>
+			<li><a href="#"><img src="/img/icons/youtube-icon.svg" alt="Youtube Icon" width="24" height="24"></a></li>
+		</ul>
+	</footer>
+
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			offset: 400,
+			dely: 0,
+			duration: 1000
+		});
+	</script>
+	<script src="/scripts/mobile-navbar.js"></script>
+</body>
+</html>
